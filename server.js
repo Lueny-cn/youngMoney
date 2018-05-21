@@ -12,8 +12,10 @@ app.get('/you',(req, res) => {
 })
 
 app.get('/me',(req, res) => {
+  console.log('req', req)
   res.send(`Hello hhh, ${port}`)
 })
+
 
 let port = 8089;
 app.listen(port, ()=>{
